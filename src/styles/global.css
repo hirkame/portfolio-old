@@ -2,6 +2,11 @@ html {
   background-color: lavenderblush;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-family: PT Sans Caption;
   font-style: normal;
@@ -20,6 +25,6 @@ a {
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
-
+  text-decoration: none;
   color: #000000;
 }
