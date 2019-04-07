@@ -12,6 +12,8 @@ export default () => (
       <Introduction />
       <Passion />
     </Container>
-    <Footer />
+    <Container>
+      <Footer />
+    </Container>
   </div>
 )
