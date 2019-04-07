@@ -1,0 +1,25 @@
+html {
+  background-color: lavenderblush;
+}
+
+h1 {
+  font-family: PT Sans Caption;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 62px;
+  text-align: center;
+
+  color: #000000;
+}
+
+p,
+a {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #000000;
+}
