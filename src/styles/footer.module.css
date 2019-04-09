@@ -3,20 +3,33 @@
   justify-content: flex-end;
 }
 
-.listoflists {
+.footerColumnLeft {
+  margin-right: auto;
+}
+
+.footerColumnList {
   margin-left: 80px;
   display: inline-block;
 }
 
-.lists {
+.copyright {
+  margin-top: 20px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.list {
   margin: 0;
   padding: 0;
 }
 
-.list {
+.listContent {
   list-style: none;
   text-align: center;
   width: auto;
-  margin: 0;
+  margin: 0 0 5px 0;
   text-align: left;
+  color: #aca7b0;
 }

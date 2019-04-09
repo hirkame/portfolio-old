@@ -50,7 +50,7 @@ const query = graphql`
   query {
     file(relativePath: { eq: "profile.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
