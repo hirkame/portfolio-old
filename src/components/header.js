@@ -10,7 +10,7 @@ export default () => (
       <div className={styles.header}>
         <div className="container">
           <div className={styles.logo}>
-            <Img fixed={data.file.childImageSharp.fixed} />
+            <Img fixed={data.file.childImageSharp.fixed} fadeIn={false} />
           </div>
           <ul className={styles.lists}>
             <li className={styles.list}>
