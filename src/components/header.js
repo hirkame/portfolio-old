@@ -10,11 +10,13 @@ export default () => (
       <div className={styles.header}>
         <div className="container">
           <div className={styles.logo}>
-            <Img
-              fixed={data.file.childImageSharp.fixed}
-              fadeIn={false}
-              alt="logo"
-            />
+            <Link to="/">
+              <Img
+                fixed={data.file.childImageSharp.fixed}
+                fadeIn={false}
+                alt="logo"
+              />
+            </Link>
           </div>
           <ul className={styles.lists}>
             <li className={styles.list}>
