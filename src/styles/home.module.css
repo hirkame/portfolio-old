@@ -10,8 +10,14 @@
   left: 50%;
   transform: translate(-50%, calc(-50% - 67px));
   margin: auto;
-  font-size: 27px;
-  line-height: 62px;
+  width: 100%;
+  font-size: 3.5rem;
+  line-height: 2.5em;
+}
+
+.name {
+  font-size: 4rem;
+  color: #75ccff;
 }
 
 .mountain {

@@ -1,0 +1,42 @@
+.date {
+  color: #aca7b0;
+}
+
+.title {
+  text-align: left;
+}
+
+.summary {
+  text-align: left;
+  color: #aca7b0;
+  border-left: 4px solid #75ccff;
+  padding-left: 20px;
+}
+
+.cover {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.text {
+  color: #aca7b0;
+}
+
+.text h4 {
+  color: black;
+  text-align: left;
+}
+
+.text pre {
+  position: relative;
+  padding: 20px 10px;
+  margin: 0 auto;
+  background: #083651;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  color: #aca7b0;
+  border-left: 4px solid #75ccff;
+}
