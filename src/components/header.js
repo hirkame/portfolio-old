@@ -20,10 +20,10 @@ export default () => (
           </div>
           <ul className={styles.lists}>
             <li className={styles.list}>
-              <Link to="/profile/">Profile</Link>
+              <Link to="/">Home</Link>
             </li>
             <li className={styles.list}>
-              <Link to="/work/">Work</Link>
+              <Link to="/profile/">Profile</Link>
             </li>
             <li className={styles.list}>
               <Link to="/posts/">Posts</Link>

@@ -1,0 +1,19 @@
+.img {
+  width: 100%;
+}
+
+.title {
+  color: #000000;
+  font-weight: bold;
+  text-align: left;
+}
+
+.summary {
+  color: #aca7b0;
+  text-align: left;
+}
+
+.date {
+  color: #aca7b0;
+  text-align: left;
+}

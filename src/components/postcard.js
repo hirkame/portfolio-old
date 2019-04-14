@@ -1,10 +1,13 @@
 import React from "react"
+import styles from "../styles/postcard.module.css"
 
-const PostCard = ({ title, summary }) => {
+const PostCard = ({ img, title, summary, date }) => {
   return (
     <div>
-      <p>{title}</p>
-      <p>{summary}</p>
+      <img className={styles.img} src={img.url} alt={img.alt} />
+      <p className={styles.title}>{title}</p>
+      <p className={styles.summary}>{summary}</p>
+      <p className={styles.date}>{date}</p>
     </div>
   )
 }

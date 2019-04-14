@@ -4,6 +4,7 @@ import PostCard from "../components/postcard"
 import Container from "../components/container"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import styles from "../styles/posts.module.css"
 
 class Posts extends React.Component {
   render() {
@@ -11,22 +12,25 @@ class Posts extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <div>
-          {data.allPrismicPortfolioPosts.edges.map(postcard => (
-            <li>
-              <PostCard
-                date={postcard.node.data.post_date.text}
-                title={postcard.node.data.post_title.text}
-                summary={postcard.node.data.post_summary.text}
-              />
-            </li>
-          ))}
-          {console.log(data.allPrismicPortfolioPosts.edges)}
+        <div className={`${styles.posts} container`}>
+          {data.allPrismicPortfolioPosts.edges.map(post => {
+            const postData = post.node.data
+            return (
+              <li className={styles.post}>
+                <PostCard
+                  img={postData.post_cover}
+                  title={postData.post_title.text}
+                  summary={postData.post_summary.text}
+                  date={postData.post_date.text}
+                />
+              </li>
+            )
+          })}
         </div>
         <Container>
           <Footer />
         </Container>
-      </React.Fragment>
+      </React.Fragment >
     )
   }
 }

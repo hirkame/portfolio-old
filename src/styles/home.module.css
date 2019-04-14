@@ -11,12 +11,12 @@
   transform: translate(-50%, calc(-50% - 67px));
   margin: auto;
   width: 100%;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 2.5em;
 }
 
 .name {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #75ccff;
 }
 
