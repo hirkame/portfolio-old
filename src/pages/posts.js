@@ -15,9 +15,11 @@ class Posts extends React.Component {
         <div className={`${styles.posts} container`}>
           {data.allPrismicPortfolioPosts.edges.map(post => {
             const postData = post.node.data
+            console.log(post.node)
             return (
               <li className={styles.post}>
                 <PostCard
+                  uid={post.node.uid}
                   img={postData.post_cover}
                   title={postData.post_title.text}
                   summary={postData.post_summary.text}
@@ -42,6 +44,7 @@ export const pageQuery = graphql`
     allPrismicPortfolioPosts {
       edges {
         node {
+          uid
           data {
             post_date
             post_title {
@@ -60,4 +63,5 @@ export const pageQuery = graphql`
       }
     }
   }
+
 `
