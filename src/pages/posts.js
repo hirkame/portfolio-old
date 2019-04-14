@@ -13,11 +13,10 @@ class Posts extends React.Component {
       <React.Fragment>
         <Header />
         <div className={`${styles.posts} container`}>
-          {data.allPrismicPortfolioPosts.edges.map(post => {
-            const postData = post.node.data
-            console.log(post.node)
-            return (
-              <li className={styles.post}>
+          <div className={styles.posts}>
+            {data.allPrismicPortfolioPosts.edges.map(post => {
+              const postData = post.node.data
+              return (
                 <PostCard
                   uid={post.node.uid}
                   img={postData.post_cover}
@@ -25,14 +24,14 @@ class Posts extends React.Component {
                   summary={postData.post_summary.text}
                   date={postData.post_date.text}
                 />
-              </li>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
         <Container>
           <Footer />
         </Container>
-      </React.Fragment >
+      </React.Fragment>
     )
   }
 }
@@ -63,5 +62,4 @@ export const pageQuery = graphql`
       }
     }
   }
-
 `
