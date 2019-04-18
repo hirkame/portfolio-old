@@ -16,17 +16,24 @@
 }
 
 .title {
-  color: #aca7b0;
+  color: #222;
   font-weight: bold;
   text-align: left;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
 .summary {
-  color: #aca7b0;
+  padding: 0;
+  margin: 5px 0 0 0;
+  color: #222;
   text-align: left;
 }
 
 .date {
+  font-size: 12px;
+  padding: 0;
+  margin: 5px 0 0 0;
   color: #aca7b0;
   text-align: left;
 }

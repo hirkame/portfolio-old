@@ -22,6 +22,7 @@ const Post = ({ data: { prismicPortfolioPosts } }) => {
               src={data.post_cover.url}
               alt={data.post_cover.alt}
             />
+            <p className={styles.cover_desc}>{data.post_image_desc.text}</p>
             <div
               dangerouslySetInnerHTML={{
                 __html: data.post_text.html,
@@ -45,6 +46,9 @@ export const pageQuery = graphql`
     prismicPortfolioPosts(uid: { eq: $uid }) {
       uid
       data {
+        post_image_desc {
+          text
+        }
         post_date
         post_title {
           text
