@@ -21,13 +21,19 @@ export default () => (
           </div>
           <ul className={styles.lists}>
             <li className={styles.list}>
-              <Link to="/">Home</Link>
+              <Link className={styles.link} to="/">
+                Home
+              </Link>
             </li>
             <li className={styles.list}>
-              <Link to="/profile/">Profile</Link>
+              <Link className={styles.link} to="/profile/">
+                Profile
+              </Link>
             </li>
             <li className={styles.list}>
-              <Link to="/posts/">Posts</Link>
+              <Link className={styles.link} to="/posts/">
+                Posts
+              </Link>
             </li>
           </ul>
         </div>
