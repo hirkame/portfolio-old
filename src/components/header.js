@@ -13,6 +13,7 @@ export default () => (
             <Link to="/">
               <Img
                 fixed={data.file.childImageSharp.fixed}
+                critical={true}
                 fadeIn={false}
                 alt="logo"
               />

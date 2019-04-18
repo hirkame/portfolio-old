@@ -8,7 +8,7 @@ export default () => (
     query={query}
     render={data => (
       <Container className="row">
-        <div className="container">
+        <div className="container fade">
           <div className="nine columns">
             <p>
               After my first trip to African countries, I have been to 7 African

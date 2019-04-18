@@ -8,10 +8,11 @@ export default () => (
     query={query}
     render={data => (
       <Container>
-        <div className="container">
+        <div className="container fade">
           <Img
             className="three columns"
             fluid={data.file.childImageSharp.fluid}
+            // fadeIn={false}
             alt="profile photo"
           />
           <div className="nine columns">

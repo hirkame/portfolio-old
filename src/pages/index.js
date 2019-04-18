@@ -10,7 +10,7 @@ export default () => (
     render={data => (
       <div>
         <Header />
-        <div className={styles.indexContainer}>
+        <div className={`${styles.indexContainer} fade`}>
           <h1 className={styles.greeting}>
             Hello! <br />I am{" "}
             <span className={styles.name}>Hiroki Kameyama</span> from Japan.{" "}

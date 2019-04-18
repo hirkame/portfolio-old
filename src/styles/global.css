@@ -26,3 +26,18 @@ a {
   line-height: 1.5em;
   text-decoration: none;
 }
+
+.fade {
+  animation-name: fade-from-above;
+  animation-duration: 2s;
+}
+@keyframes fade-from-above {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

@@ -12,7 +12,7 @@ class Posts extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <div className={`${styles.posts} container`}>
+        <div className={`${styles.posts} container fade`}>
           <div className={styles.posts}>
             {data.allPrismicPortfolioPosts.edges.map(post => {
               const postData = post.node.data
@@ -22,7 +22,7 @@ class Posts extends React.Component {
                   img={postData.post_cover}
                   title={postData.post_title.text}
                   summary={postData.post_summary.text}
-                  date={postData.post_date.text}
+                  date={postData.post_date}
                 />
               )
             })}
