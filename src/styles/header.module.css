@@ -26,12 +26,13 @@
 }
 
 .list :hover {
-  transition: 1s;
+  transition: 0.5s;
   color: #75ccff;
 }
 
 .link {
   color: #aca7b0;
+  padding-bottom: 5px;
   display: block;
   position: relative;
   text-decoration: none;
@@ -42,7 +43,7 @@
   background-color: #75ccff;
   position: relative;
   left: 0;
-  bottom: -5px;
+  bottom: 0;
   content: "";
   width: 100%;
   height: 2px;
