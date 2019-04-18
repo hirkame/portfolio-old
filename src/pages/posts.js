@@ -14,10 +14,11 @@ class Posts extends React.Component {
         <Header />
         <div className={`${styles.posts} container fade`}>
           <div className={styles.posts}>
-            {data.allPrismicPortfolioPosts.edges.map(post => {
+            {data.allPrismicPortfolioPosts.edges.map((post, index) => {
               const postData = post.node.data
               return (
                 <PostCard
+                  key={index}
                   uid={post.node.uid}
                   img={postData.post_cover}
                   title={postData.post_title.text}
