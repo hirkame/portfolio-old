@@ -11,26 +11,30 @@ export default () => (
         <div className="container fade">
           <div className="nine columns">
             <p>
-              After my first trip to African countries, I have been to 7 African
-              countries so far. (Kenya, Tanzania, Uganda, Rwanda, Burundi, Ghana
-              and Egypt) Every single trip is unforgettable and priceless memory
-              for me, though I sometimes got troubles.
+              Since my first trip I have been to 7 countries within the African
+              continent including(Kenya, Tanzania,Uganda,Rwanda, Burundi, Ghana
+              and Egypt). Despite the many challenges I faced in travelling I
+              have found each trip to be a priceless personal experience.
             </p>
             <p>
-              Currently, I am engaged in building developer ecosystem in Africa.
+              My main focus as of now is in building developer ecosystems in
+              Africa.
             </p>
             <p>
-              Software industry in Africa is growing rapidly. However, the major
-              concern is a lack of talents. Because of the inequal access to
-              proper education and poor governance, there are very few software
-              professionals in labor market and if there are, many software
-              developers emigrate to Europe or the US.
+              The software industry in Africa is growing rapidly. The major
+              concern today is the lack of talent.Unfortunately, there are few
+              software professionals in the labour market. This is due mainly to
+              unequal access to proper education and poor governance. To make
+              matters worst the small number of software professionals which are
+              produced tend to emigrate to Europe and the US seeking better
+              opportunities.
             </p>
             <p>
-              One possible solution is to provide enough opportunities to
-              massive young people and grow tech ecosystem in Africa. By doing
-              so, we could make a sustainable model to produce software
-              professionals in Africa and facilitate tech ecosystem in Africa.
+              A possible solution to this issue is simply providing enough
+              educational opportunities in software to a large number of young
+              people. It is my hope that this will encourage the growth of a
+              sustainable tech ecosystem of software professionals within
+              Africa.
             </p>
           </div>
           <Img

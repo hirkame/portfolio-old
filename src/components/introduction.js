@@ -17,28 +17,25 @@ export default () => (
           />
           <div className="nine columns">
             <p>
-              I am Hiroki, a university student, business strategist and
-              community builder based in Japan.
+              I'm Hiroki,a university student,business strategist and community
+              builder based in Japan.{" "}
               <span role="img" aria-label="japan">
                 🇯🇵
               </span>{" "}
-              I am studying sociology in University of Tokyo, working for
-              Progate as the Regional Manager of Africa. I do academic
-              activities, Web/App design, front-end coding, business management,
-              community development, market analysis or so on... Currently, I
-              focus on building tech communities in Africa.
+              I am currently studying sociology at The University of Tokyo and
+              working at Progate as the Regional Manager of Africa. Alongside my
+              academic studies I do Web/App design, front-end coding, business
+              management, and market analysis. As of now I am focused on
+              building tech communities in Africa.
             </p>
+            <p>My interest in Africa began via strange circumstances. </p>
             <p>
-              I got interested in African tech scene by a strange coincidence.{" "}
-            </p>
-            <p>
-              I played saxophone when I was a high school student and suddenly
-              fell in love with JAZZ and FUNK music. I got a shock when I felt
-              their groove and rhythm and bass. And I started to be attracted by
-              their very origin, “Africa.” So, I flied to Kenya, Tanzania and
-              Ghana in 2016. And I met some tech entrepreneurs in these
-              countries. That is how I got involved in Africa and its tech
-              community.
+              I played the saxophone as a high school student and fell deeply in
+              love with JAZZ and FUNK music. I was mesmerized by the groove,
+              rhythm and bass. My curiosity led me to digging into the origins
+              of the sound, Africa, and in 2016 I traveled to Kenya,Tanzania and
+              Ghana. In Africa I met tech entrepreneurs marking the beginning of
+              my involvement within the African tech community.
             </p>
           </div>
         </div>
