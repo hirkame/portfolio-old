@@ -6,7 +6,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 
 export default () => (
-  <React.Fragment>
+  <div>
     <Header />
     <Container>
       <Introduction />
@@ -15,5 +15,5 @@ export default () => (
     <Container>
       <Footer />
     </Container>
-  </React.Fragment>
+  </div>
 )

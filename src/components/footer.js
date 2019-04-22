@@ -44,10 +44,10 @@ export default () => (
               <p className={styles.title}>PAGES</p>
               <ul className={styles.list}>
                 <li className={styles.listContent}>
-                  <Link to="/profile/">Profile</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className={styles.listContent}>
-                  <Link to="/work/">Work</Link>
+                  <Link to="/profile/">Profile</Link>
                 </li>
                 <li className={styles.listContent}>
                   <Link to="/posts/">Posts</Link>
