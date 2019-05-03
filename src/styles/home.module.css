@@ -18,7 +18,7 @@
 
 .name {
   font-size: 3.5rem;
-  color: #75ccff;
+  background: linear-gradient(transparent 60%, #75ccff 60%);
 }
 
 .mountain {

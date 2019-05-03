@@ -13,15 +13,17 @@ const Post = ({ data: { prismicPortfolioPosts } }) => {
       <Header />
       <Container>
         <Container>
-          <div className="container">
+          <div className={styles.container_for_post}>
             <p className={styles.date}>{data.post_date}</p>
             <h1 className={styles.title}>{data.post_title.text}</h1>
             <h4 className={styles.summary}>{data.post_summary.text}</h4>
-            <img
-              className={styles.cover}
-              src={data.post_cover.url}
-              alt={data.post_cover.alt}
-            />
+            <div className={styles.cover_container}>
+              <img
+                className={styles.cover}
+                src={data.post_cover.url}
+                alt={data.post_cover.alt}
+              />
+            </div>
             <p className={styles.cover_desc}>{data.post_image_desc.text}</p>
             <div
               dangerouslySetInnerHTML={{

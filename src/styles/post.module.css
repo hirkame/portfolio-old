@@ -1,3 +1,12 @@
+.container_for_post {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 .date {
   font-size: 12px;
   color: #aca7b0;
@@ -7,6 +16,7 @@
   margin-bottom: 10px;
   text-align: left;
   color: #222;
+  font-size: 3rem;
 }
 
 .summary {
@@ -15,19 +25,26 @@
   color: #aca7b0;
   border-left: 4px solid #75ccff;
   padding-left: 20px;
+  font-size: 1.6rem;
 }
 
+.cover_container {
+  text-align: center;
+}
 .cover {
-  max-width: 800px;
+  max-width: 700px;
   width: 100%;
   max-height: 100%;
+  max-height: 480px;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   margin-bottom: 10px;
+  text-align: center;
 }
 .cover_desc {
   color: #aca7b0;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .text {
@@ -35,7 +52,10 @@
 }
 
 .text h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
   text-align: left;
+  margin: 25px 0 15px;
 }
 
 .text pre {
@@ -48,4 +68,8 @@
   white-space: pre;
   color: #aca7b0;
   border-left: 4px solid #75ccff;
+}
+
+.text p {
+  margin: 15px 0;
 }
