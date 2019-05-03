@@ -11,6 +11,12 @@ module.exports = {
   plugins: [
     { resolve: `gatsby-plugin-sitemap` },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-139557585-1",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `img`,
