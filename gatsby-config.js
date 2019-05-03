@@ -6,7 +6,12 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://hirokikameyama.com`,
+    url: `https://hirokikameyama.com`,
+    title: "Hiroki Kameyama",
+    titleTemplate: "%s · Portfolio",
+    description: "This is Hiroki Kameyama's portfolio website.",
+    image: "/profile.jpg",
+    twitterUsername: "@hirkame",
   },
   plugins: [
     { resolve: `gatsby-plugin-sitemap` },
@@ -16,6 +21,7 @@ module.exports = {
         trackingId: "UA-139557585-1",
       },
     },
+    { resolve: `gatsby-plugin-react-helmet` },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

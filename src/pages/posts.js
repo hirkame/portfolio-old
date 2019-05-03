@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import SEO from "../components/SEO"
 import PostCard from "../components/postcard"
 import Container from "../components/container"
 import Header from "../components/header"
@@ -11,6 +12,7 @@ class Posts extends React.Component {
     const { data } = this.props
     return (
       <React.Fragment>
+        <SEO />
         <Header />
         <div className={`${styles.posts} container fade`}>
           <div className={styles.posts}>

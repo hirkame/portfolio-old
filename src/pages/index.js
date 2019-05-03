@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "../styles/home.module.css"
 import { graphql, StaticQuery } from "gatsby"
+import SEO from "../components/SEO"
 import Img from "gatsby-image"
 import Header from "../components/header"
 
@@ -8,7 +9,8 @@ export default () => (
   <StaticQuery
     query={query}
     render={data => (
-      <div>
+      <React.Fragment>
+        <SEO />
         <Header />
         <div className={`${styles.indexContainer} fade`}>
           <h1 className={styles.greeting}>
@@ -23,7 +25,7 @@ export default () => (
             style={{ position: "absolute" }}
           />
         </div>
-      </div>
+      </React.Fragment>
     )}
   />
 )
