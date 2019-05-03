@@ -5,7 +5,11 @@ require("dotenv").config({
 })
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://hirokikameyama.com`,
+  },
   plugins: [
+    { resolve: `gatsby-plugin-sitemap` },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
