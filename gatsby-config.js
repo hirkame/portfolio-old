@@ -14,7 +14,12 @@ module.exports = {
     twitterUsername: "@hirkame",
   },
   plugins: [
-    { resolve: `gatsby-plugin-sitemap` },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
