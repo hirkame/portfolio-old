@@ -6,7 +6,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    url: `https://hirokikameyama.com`,
+    siteUrl: `https://hirokikameyama.com`,
     title: "Hiroki Kameyama",
     titleTemplate: "%s · Portfolio",
     description: "This is Hiroki Kameyama's portfolio website.",
