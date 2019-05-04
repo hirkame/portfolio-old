@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/SEO"
+import Seo from "../components/seo"
 import Container from "../components/container"
 import Introduction from "../components/introduction"
 import Passion from "../components/passion"
@@ -8,7 +8,7 @@ import Footer from "../components/footer"
 
 export default () => (
   <React.Fragment>
-    <SEO />>
+    <Seo />>
     <Header />
     <Container>
       <Introduction />

@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "../styles/home.module.css"
 import { graphql, StaticQuery } from "gatsby"
-import SEO from "../components/SEO"
+import Seo from "../components/seo"
 import Img from "gatsby-image"
 import Header from "../components/header"
 
@@ -10,7 +10,7 @@ export default () => (
     query={query}
     render={data => (
       <React.Fragment>
-        <SEO />
+        <Seo />
         <Header />
         <div className={`${styles.indexContainer} fade`}>
           <h1 className={styles.greeting}>
