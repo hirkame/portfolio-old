@@ -55,3 +55,83 @@
 .list:hover::after {
   transform: scale(1, 1);
 }
+
+#mobile_nav {
+  display: none;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .lists {
+    display: none;
+  }
+  .mobile_nav {
+    z-index: 10000;
+  }
+  .nav_icon,
+  .nav_icon:before,
+  .nav_icon:after {
+    position: fixed;
+    z-index: 100000;
+    height: 2px;
+    width: 25px;
+    border-radius: 1px;
+    background: #555;
+    display: block;
+    content: "";
+  }
+  .nav_icon {
+    top: 25px;
+    right: 20px;
+  }
+  .nav_icon:before {
+    top: 33px;
+    right: 20px;
+  }
+  .nav_icon:after {
+    top: 41px;
+    right: 20px;
+  }
+
+  .nomargin {
+    margin: 0;
+  }
+  .input {
+    display: none !important;
+  }
+  .hidden_show {
+    overflow: hidden;
+    display: none;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    height: 100vh;
+  }
+  .mobile_nav input:checked ~ .hidden_show {
+    width: 100vw;
+    display: block;
+    position: fixed;
+    background-color: #ffffff;
+  }
+  .mobile_logo {
+    position: relative;
+    top: 18px;
+    display: block;
+    width: auto;
+    height: 37px;
+  }
+  .mobile_lists {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 20px 20px 20px;
+    padding: 0;
+  }
+  .mobile_list {
+    display: block;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
