@@ -8,7 +8,7 @@ import Footer from "../components/footer"
 
 export default () => (
   <React.Fragment>
-    <Seo />>
+    <Seo />
     <Header />
     <Container>
       <Introduction />

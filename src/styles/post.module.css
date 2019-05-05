@@ -73,3 +73,11 @@
 .text p {
   margin: 15px 0;
 }
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
