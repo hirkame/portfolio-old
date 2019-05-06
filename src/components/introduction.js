@@ -17,7 +17,7 @@ export default () => (
           />
           <div className={`${styles.passages} nine columns`}>
             <p>
-              I'm Hiroki,a university student,business strategist and community
+              I'm Hiroki, a university student,business strategist and community
               builder based in Japan.{" "}
               <span role="img" aria-label="japan">
                 🇯🇵
