@@ -1,7 +1,7 @@
 .img {
-  width: 75%;
+  width: 100%;
   height: auto;
-  margin: 0 12.5% 40px 12.5%;
+  margin: 0;
 }
 
 .mobile_img {
@@ -14,6 +14,15 @@
 
 /* MOBILE */
 @media only screen and (max-width: 600px) {
+  .img {
+    width: 100%;
+    height: auto;
+    padding: 0 12.5%;
+    margin-bottom: 40px;
+  }
+  .img img {
+    object-fit: contain !important;
+  }
   .mobile_img {
     display: block;
   }
