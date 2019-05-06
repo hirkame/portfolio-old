@@ -36,6 +36,8 @@ export default () => (
               </Link>
             </li>
           </ul>
+
+          {/* MOBILE */}
           <div className={styles.mobile_nav}>
             <label htmlFor="label1" className={styles.nomargin}>
               <span className={styles.nav_icon} />
@@ -68,6 +70,32 @@ export default () => (
                     <Link className={styles.link} to="/posts/">
                       Posts
                     </Link>
+                  </li>
+                </ul>
+                <ul className={styles.mobile_contact}>
+                  <li>
+                    <a
+                      className={styles.link}
+                      href="https://twitter.com/hirkame"
+                    >
+                      Twitter
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className={styles.link}
+                      href="https://www.linkedin.com/in/hiroki-kameyama/"
+                    >
+                      Linkedin
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className={styles.link}
+                      href="https://github.com/hirkame"
+                    >
+                      Github
+                    </a>
                   </li>
                 </ul>
               </div>
