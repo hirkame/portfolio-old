@@ -15,7 +15,8 @@ export default () => (
         <div className={`${styles.indexContainer} fade`}>
           <h1 className={styles.greeting}>
             Hello! <br />I am{" "}
-            <span className={styles.name}>Hiroki Kameyama</span> from Japan.{" "}
+            <span className={styles.name}>Hiroki Kameyama</span>
+            <br /> from Japan.{" "}
           </h1>
           <Img
             fluid={data.file.childImageSharp.fluid}
