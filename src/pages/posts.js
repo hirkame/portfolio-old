@@ -14,7 +14,7 @@ class Posts extends React.Component {
       <React.Fragment>
         <Seo />
         <Header />
-        <div className={`${styles.posts} container fade`}>
+        <div className="container fade">
           <div className={styles.posts}>
             {data.allPrismicPortfolioPosts.edges.map((post, index) => {
               const postData = post.node.data

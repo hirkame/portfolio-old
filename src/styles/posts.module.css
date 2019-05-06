@@ -3,5 +3,12 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  margin: 60px auto;
+  margin: 40px auto;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .posts {
+    margin: 20px auto;
+  }
 }

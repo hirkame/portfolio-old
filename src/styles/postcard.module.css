@@ -37,3 +37,12 @@
   color: #aca7b0;
   text-align: left;
 }
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .post {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+}
