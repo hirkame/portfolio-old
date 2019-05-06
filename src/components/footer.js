@@ -18,10 +18,11 @@ export default () => (
                 alt="logo"
               />
               <p className={styles.copyright}>
+                Copyright
                 <span role="img" aria-label="Copyright Sign">
                   ©
                 </span>
-                ️ Hiroki Kameyama
+                Hiroki Kameyama
               </p>
             </div>
             <div className={styles.footerColumnList}>
