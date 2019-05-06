@@ -1,0 +1,23 @@
+.img {
+  width: 75%;
+  height: auto;
+  margin: 0 12.5% 40px 12.5%;
+}
+
+.mobile_img {
+  display: none;
+}
+
+.passages p {
+  margin: 15px 0;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .mobile_img {
+    display: block;
+  }
+  .desktop_img {
+    display: none;
+  }
+}

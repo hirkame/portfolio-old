@@ -2,6 +2,7 @@ import React from "react"
 import Container from "./container.js"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import styles from "../styles/profile.module.css"
 
 export default () => (
   <StaticQuery
@@ -10,12 +11,11 @@ export default () => (
       <Container>
         <div className="container fade">
           <Img
-            className="three columns"
+            className={`three columns ${styles.img}`}
             fluid={data.file.childImageSharp.fluid}
-            // fadeIn={false}
             alt="profile photo"
           />
-          <div className="nine columns">
+          <div className={`${styles.passages} nine columns`}>
             <p>
               I'm Hiroki,a university student,business strategist and community
               builder based in Japan.{" "}

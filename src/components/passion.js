@@ -2,6 +2,7 @@ import React from "react"
 import Container from "./container.js"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import styles from "../styles/profile.module.css"
 
 export default () => (
   <StaticQuery
@@ -9,7 +10,12 @@ export default () => (
     render={data => (
       <Container className="row">
         <div className="container fade">
-          <div className="nine columns">
+          <Img
+            className={`three columns ${styles.mobile_img} ${styles.img}`}
+            fluid={data.file.childImageSharp.fluid}
+            alt="map"
+          />
+          <div className={`${styles.passages} nine columns`}>
             <p>
               Since my first trip I have been to 7 countries within the African
               continent including(Kenya, Tanzania,Uganda,Rwanda, Burundi, Ghana
@@ -38,7 +44,7 @@ export default () => (
             </p>
           </div>
           <Img
-            className="three columns"
+            className={`three columns ${styles.img} ${styles.desktop_img}`}
             fluid={data.file.childImageSharp.fluid}
             alt="map"
           />
