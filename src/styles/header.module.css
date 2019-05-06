@@ -60,12 +60,17 @@
   display: none;
 }
 
+.mobile_nav {
+  display: none;
+}
+
 /* MOBILE */
 @media only screen and (max-width: 600px) {
   .lists {
     display: none;
   }
   .mobile_nav {
+    display: block;
     z-index: 10000;
   }
   .nav_icon,

@@ -9,7 +9,7 @@ export default () => (
     render={data => (
       <div className={styles.header}>
         <div className="container">
-          <div className={styles.mobile_logo}>
+          <div className={styles.logo}>
             <Link to="/">
               <Img
                 fixed={data.file.childImageSharp.fixed}
