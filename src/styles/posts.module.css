@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
+  flex-direction: row;
   margin: 40px auto;
 }
 
