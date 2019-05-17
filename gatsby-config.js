@@ -10,7 +10,7 @@ module.exports = {
     title: "Hiroki Kameyama",
     titleTemplate: "%s · Portfolio",
     description: "This is Hiroki Kameyama's portfolio website.",
-    image: "/cover.jpg",
+    image: "cover.jpg",
     twitterUsername: "@hirkame",
   },
   plugins: [

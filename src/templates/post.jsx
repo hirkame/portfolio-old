@@ -7,15 +7,12 @@ import Footer from "../components/footer"
 import Seo from "../components/seo"
 
 const Post = ({ data: { prismicPortfolioPosts } }) => {
-  // const { data } = prismicPortfolioPosts
-
   return (
     <React.Fragment>
       <Seo
         title={prismicPortfolioPosts.data.post_title.text}
         description={prismicPortfolioPosts.data.post_summary.text}
         image={prismicPortfolioPosts.data.post_cover.url}
-        pathname={prismicPortfolioPosts.uid}
       />
       <Header />
       <Container>
