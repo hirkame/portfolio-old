@@ -4,12 +4,18 @@ import styles from "../styles/post.module.css"
 import Container from "../components/container"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Seo from "../components/seo"
 
 const Post = ({ data: { prismicPortfolioPosts } }) => {
   const { data } = prismicPortfolioPosts
 
   return (
     <React.Fragment>
+      <Seo
+        title={data.post_title.text}
+        description={data.post_summary.text}
+        image={data.post_cover.url}
+      />
       <Header />
       <Container>
         <Container>
