@@ -16,19 +16,21 @@ class Posts extends React.Component {
         <Header />
         <div className="container fade">
           <div className={styles.posts}>
-            {data.allPrismicPortfolioPosts.edges.map((post, index) => {
-              const postData = post.node.data
-              return (
-                <PostCard
-                  key={index}
-                  uid={post.node.uid}
-                  img={postData.post_cover}
-                  title={postData.post_title.text}
-                  summary={postData.post_summary.text}
-                  date={postData.post_date}
-                />
-              )
-            })}
+            {data.allPrismicPortfolioPosts.edges
+              .reverse()
+              .map((post, index) => {
+                const postData = post.node.data
+                return (
+                  <PostCard
+                    key={index}
+                    uid={post.node.uid}
+                    img={postData.post_cover}
+                    title={postData.post_title.text}
+                    summary={postData.post_summary.text}
+                    date={postData.post_date}
+                  />
+                )
+              })}
           </div>
         </div>
         <Container>
