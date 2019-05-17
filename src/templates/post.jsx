@@ -15,7 +15,7 @@ const Post = ({ data: { prismicPortfolioPosts } }) => {
         title={data.post_title.text}
         description={data.post_summary.text}
         image={data.post_cover.url}
-        url={prismicPortfolioPosts.slugs}
+        pathname={prismicPortfolioPosts.slugs[0]}
       />
       <Header />
       <Container>
