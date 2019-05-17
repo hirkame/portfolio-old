@@ -15,7 +15,7 @@ const Post = ({ data: { prismicPortfolioPosts } }) => {
         title={prismicPortfolioPosts.data.post_title.text}
         description={prismicPortfolioPosts.data.post_summary.text}
         image={prismicPortfolioPosts.data.post_cover.url}
-        pathname={prismicPortfolioPosts.data.uid}
+        pathname={prismicPortfolioPosts.uid}
       />
       <Header />
       <Container>
