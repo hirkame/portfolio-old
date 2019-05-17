@@ -12,35 +12,37 @@ const Post = ({ data: { prismicPortfolioPosts } }) => {
   return (
     <React.Fragment>
       <Seo
-        title={prismicPortfolioPosts.post_title.text}
-        description={prismicPortfolioPosts.post_summary.text}
-        image={prismicPortfolioPosts.post_cover.url}
-        pathname={prismicPortfolioPosts.uid}
+        title={prismicPortfolioPosts.data.post_title.text}
+        description={prismicPortfolioPosts.data.post_summary.text}
+        image={prismicPortfolioPosts.data.post_cover.url}
+        pathname={prismicPortfolioPosts.data.uid}
       />
       <Header />
       <Container>
         <Container>
           <div className={styles.container_for_post}>
-            <p className={styles.date}>{prismicPortfolioPosts.post_date}</p>
+            <p className={styles.date}>
+              {prismicPortfolioPosts.data.post_date}
+            </p>
             <h1 className={styles.title}>
-              {prismicPortfolioPosts.post_title.text}
+              {prismicPortfolioPosts.data.post_title.text}
             </h1>
             <h4 className={styles.summary}>
-              {prismicPortfolioPosts.post_summary.text}
+              {prismicPortfolioPosts.data.post_summary.text}
             </h4>
             <div className={styles.cover_container}>
               <img
                 className={styles.cover}
-                src={prismicPortfolioPosts.post_cover.url}
-                alt={prismicPortfolioPosts.post_cover.alt}
+                src={prismicPortfolioPosts.data.post_cover.url}
+                alt={prismicPortfolioPosts.data.post_cover.alt}
               />
             </div>
             <p className={styles.cover_desc}>
-              {prismicPortfolioPosts.post_image_desc.text}
+              {prismicPortfolioPosts.data.post_image_desc.text}
             </p>
             <div
               dangerouslySetInnerHTML={{
-                __html: prismicPortfolioPosts.post_text.html,
+                __html: prismicPortfolioPosts.data.post_text.html,
               }}
               className={styles.text}
             />
