@@ -15,7 +15,7 @@ const Post = ({ data: { prismicPortfolioPosts } }) => {
         title={data.post_title.text}
         description={data.post_summary.text}
         image={data.post_cover.url}
-        pathname={prismicPortfolioPosts.slugs[0]}
+        pathname={prismicPortfolioPosts.uid}
       />
       <Header />
       <Container>
@@ -74,7 +74,6 @@ export const pageQuery = graphql`
           html
         }
       }
-      slugs
     }
   }
 `
