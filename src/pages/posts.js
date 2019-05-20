@@ -8,6 +8,28 @@ import Footer from "../components/footer"
 import styles from "../styles/posts.module.css"
 
 class Posts extends React.Component {
+  sortPostsList = data => {
+    return data.sort(function(a, b) {
+      return a.node.data.post_date < b.node.data.post_date ? 1 : -1
+    })
+  }
+
+  displayPostsList = data => {
+    return data.map((post, index) => {
+      const postData = post.node.data
+      return (
+        <PostCard
+          key={index}
+          uid={post.node.uid}
+          img={postData.post_cover}
+          title={postData.post_title.text}
+          summary={postData.post_summary.text}
+          date={postData.post_date}
+        />
+      )
+    })
+  }
+
   render() {
     const { data } = this.props
     return (
@@ -16,21 +38,9 @@ class Posts extends React.Component {
         <Header />
         <div className="container fade">
           <div className={styles.posts}>
-            {data.allPrismicPortfolioPosts.edges
-              .reverse()
-              .map((post, index) => {
-                const postData = post.node.data
-                return (
-                  <PostCard
-                    key={index}
-                    uid={post.node.uid}
-                    img={postData.post_cover}
-                    title={postData.post_title.text}
-                    summary={postData.post_summary.text}
-                    date={postData.post_date}
-                  />
-                )
-              })}
+            {this.displayPostsList(
+              this.sortPostsList(data.allPrismicPortfolioPosts.edges)
+            )}
           </div>
         </div>
         <Container>
