@@ -71,7 +71,8 @@
 }
 
 .text p {
-  margin: 15px 0;
+  padding: 7.5px 0;
+  margin: 0;
 }
 
 /* MOBILE */
