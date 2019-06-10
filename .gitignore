@@ -1,5 +1,8 @@
 #Custom
-.vscode/*
+.vscode/
+package.json
+package-lock.json
+yarn.lock
 
 # Logs
 logs
