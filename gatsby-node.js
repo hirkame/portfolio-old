@@ -16,11 +16,11 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  const template = path.resolve("src/templates/post.jsx")
+  const template = path.resolve("src/pages/posts/post.jsx")
 
   pages.data.allPrismicPortfolioPosts.edges.forEach(edge => {
     createPage({
-      path: `/${edge.node.uid}`,
+      path: `/posts/${edge.node.uid}`,
       component: template,
       context: {
         uid: edge.node.uid,

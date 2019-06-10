@@ -39,7 +39,7 @@ module.exports = {
       options: {
         repositoryName: `portfolio-posts`,
         accessToken: `${process.env.API_KEY}`,
-        linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
+        linkResolver: ({ node, key, value }) => post => `/posts/${post.uid}`,
       },
     },
     `gatsby-plugin-sharp`,

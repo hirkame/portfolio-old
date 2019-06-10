@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styles from "../styles/post.module.css"
-import Container from "../components/container"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import Seo from "../components/seo"
+import styles from "../../styles/post.module.css"
+import Container from "../../components/container"
+import Header from "../../components/header"
+import Footer from "../../components/footer"
+import Seo from "../../components/seo"
 
 const Post = ({ data: { prismicPortfolioPosts } }) => {
   return (
@@ -56,7 +56,7 @@ const Post = ({ data: { prismicPortfolioPosts } }) => {
 export default Post
 
 export const pageQuery = graphql`
-  query PostBySlug($uid: String!) {
+  query PostBySlug($uid: String) {
     prismicPortfolioPosts(uid: { eq: $uid }) {
       uid
       data {

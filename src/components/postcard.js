@@ -7,7 +7,7 @@ class PostCard extends React.Component {
     const { uid, img, title, summary, date } = this.props
     return (
       <div className={styles.post}>
-        <Link to={`/${uid}/`}>
+        <Link to={`/posts/${uid}/`}>
           <img className={styles.img} src={img.url} alt={img.alt} />
           <p className={styles.title}>{title}</p>
           <p className={styles.summary}>{summary}</p>
