@@ -46,7 +46,7 @@ const HeaderDefault = ({ data }) => (
 
     <div className={styles.social_media}>
       {/* Twitter: Turn it into "1DA1F2" */}
-      <a href="https://twitter.com/hirkame">
+      <a href="https://twitter.com/hirkame" className={styles.twitter}>
         <Twitter
           style={{
             height: `25px`,
@@ -57,7 +57,7 @@ const HeaderDefault = ({ data }) => (
         />
       </a>
       {/* GitHub: Turn it into "161614" */}
-      <a href="https://github.com/hirkame/">
+      <a href="https://github.com/hirkame/" className={styles.github}>
         <Github
           style={{
             height: `25px`,
