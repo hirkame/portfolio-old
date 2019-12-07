@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../styles/header.module.css"
 import { Link, graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Github from "../img/github.svg"
+// import Github from "../img/github.svg"
 import Twitter from "../img/twitter.svg"
 
 export default () => (
@@ -15,7 +15,6 @@ export default () => (
             <Link to="/">
               <Img
                 fixed={data.file.childImageSharp.fixed}
-                critical={true}
                 fadeIn={false}
                 alt="logo"
               />
@@ -40,7 +39,7 @@ export default () => (
           </ul>
           <div className={styles.logo}>
             {/* Twitter: Turn it into "1DA1F2" */}
-            <a href="https://twitter.com/hirkame">
+            {/* <a href="https://twitter.com/hirkame">
               <Twitter
                 style={{
                   height: `30px`,
@@ -48,9 +47,10 @@ export default () => (
                   margin: `0 5px`,
                 }}
               />
-            </a>
+            </a> */}
+            <Twitter />
             {/* GitHub: Turn it into "161614" */}
-            <a href="https://github.com/hirkame/">
+            {/* <a href="https://github.com/hirkame/">
               <Github
                 style={{
                   height: `30px`,
@@ -58,7 +58,7 @@ export default () => (
                   margin: `0 5px`,
                 }}
               />
-            </a>
+            </a> */}
           </div>
 
           {/* MOBILE */}
@@ -73,7 +73,6 @@ export default () => (
                   <Link to="/">
                     <Img
                       fixed={data.file.childImageSharp.fixed}
-                      critical={true}
                       fadeIn={false}
                       alt="logo"
                     />
