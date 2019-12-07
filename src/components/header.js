@@ -2,6 +2,8 @@ import React from "react"
 import styles from "../styles/header.module.css"
 import { Link, graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Github from "../img/github.svg"
+import Twitter from "../img/twitter.svg"
 
 export default () => (
   <StaticQuery
@@ -36,6 +38,28 @@ export default () => (
               </Link>
             </li>
           </ul>
+          <div className={styles.logo}>
+            {/* Twitter: Turn it into "1DA1F2" */}
+            <a href="https://twitter.com/hirkame">
+              <Twitter
+                style={{
+                  height: `30px`,
+                  display: `block`,
+                  margin: `0 5px`,
+                }}
+              />
+            </a>
+            {/* GitHub: Turn it into "161614" */}
+            <a href="https://github.com/hirkame/">
+              <Github
+                style={{
+                  height: `30px`,
+                  display: `block`,
+                  margin: `0 5px`,
+                }}
+              />
+            </a>
+          </div>
 
           {/* MOBILE */}
           <div className={styles.mobile_nav}>
