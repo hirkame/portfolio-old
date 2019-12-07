@@ -64,6 +64,25 @@
   display: none;
 }
 
+.social_media {
+  display: flex;
+  margin: 25px 60px 0 0;
+  position: absolute;
+  height: 55px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.twitter:hover circle {
+  fill: #1da1f2;
+  transition: 0.7s ease;
+}
+.github:hover  path {
+  fill: #161614;
+  transition: 0.7s ease;
+}
+
 /* MOBILE */
 @media only screen and (max-width: 600px) {
   .lists {
@@ -146,5 +165,8 @@
     list-style: none;
     font-size: 1.6rem;
     padding: 8px 0;
+  }
+  .social_media {
+    display: none;
   }
 }
