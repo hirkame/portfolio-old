@@ -49,10 +49,10 @@ const HeaderDefault = ({ data }) => (
       <a href="https://twitter.com/hirkame">
         <Twitter
           style={{
-            height: `30px`,
-            width: `30px`,
+            height: `25px`,
+            width: `25px`,
             display: `block`,
-            margin: `0 20px 0 0`,
+            margin: `0 25px 0 0`,
           }}
         />
       </a>
@@ -60,10 +60,9 @@ const HeaderDefault = ({ data }) => (
       <a href="https://github.com/hirkame/">
         <Github
           style={{
-            height: `30px`,
-            width: `30px`,
+            height: `25px`,
+            width: `25px`,
             display: `block`,
-            margin: `0 20px 0 0`,
           }}
         />
       </a>
