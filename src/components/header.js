@@ -4,7 +4,6 @@ import { Link, graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Github from "../img/github.svg"
 import Twitter from "../img/twitter.svg"
-import Linkedin from "../img/linkedin.svg"
 
 export default () => (
   <StaticQuery
