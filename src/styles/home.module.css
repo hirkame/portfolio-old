@@ -29,7 +29,7 @@
   bottom: 0px;
   height: 40%;
   background: #75ccff;
-  opacity: 60%;
+  opacity: 0.6;
   animation-delay: 1.5s;
   animation-name: leftToRight;
   animation-duration: 1.5s;
