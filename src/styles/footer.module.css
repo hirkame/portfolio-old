@@ -39,6 +39,12 @@
   color: #aca7b0;
 }
 
+.listContent :hover {
+  transition: 0.5s;
+  color: #75ccff;
+  text-decoration: underline;
+}
+
 .backgroundImg {
   bottom: -40px;
   left: 0;

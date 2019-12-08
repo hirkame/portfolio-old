@@ -17,8 +17,33 @@
 }
 
 .name {
+  position: relative;
   font-size: 3.5rem;
-  background: linear-gradient(transparent 60%, #75ccff 60%);
+}
+
+.name::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0px;
+  height: 40%;
+  background: #75ccff;
+  opacity: 60%;
+  animation-delay: 1.5s;
+  animation-name: leftToRight;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes leftToRight {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .mountain {
