@@ -12,7 +12,9 @@ const Post = ({ data: { prismicPortfolioPosts } }) => {
       <Seo
         title={prismicPortfolioPosts.data.post_title.text}
         description={prismicPortfolioPosts.data.post_summary.text}
+        pathname={prismicPortfolioPosts.uid}
         image={prismicPortfolioPosts.data.post_cover.url}
+        article="true"
       />
       <Header />
       <Container>
