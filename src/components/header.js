@@ -76,7 +76,12 @@ const HeaderMobile = ({ data }) => (
       <label htmlFor="label1" className={styles.nomargin}>
         <span className={styles.nav_icon} />
       </label>
-      <input type="checkbox" id="label1" className={styles.input} />
+      <input
+        aria-label="checkbox"
+        type="checkbox"
+        id="label1"
+        className={styles.input}
+      />
       <div className={styles.hidden_show}>
         <div className="container">
           <div className={styles.mobile_logo}>

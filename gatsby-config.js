@@ -40,6 +40,9 @@ module.exports = {
         repositoryName: `portfolio-posts`,
         accessToken: `${process.env.API_KEY}`,
         linkResolver: ({ node, key, value }) => post => `/posts/${post.uid}`,
+        schemas: {
+          "portfolio-posts": require("./src/schemas/portfolio-posts.json"),
+        },
       },
     },
     `gatsby-plugin-sharp`,

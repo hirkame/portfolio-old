@@ -1,0 +1,61 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "slug",
+        "placeholder": "URL"
+      }
+    },
+    "post_date": {
+      "type": "Date",
+      "config": {
+        "label": "post_date",
+        "placeholder": "date"
+      }
+    },
+    "post_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "post_title",
+        "placeholder": "Title"
+      }
+    },
+    "post_summary": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink, embed, list-item, o-list-item",
+        "label": "post_summary",
+        "placeholder": "summary"
+      }
+    },
+    "post_cover": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 700,
+          "height": 480
+        },
+        "thumbnails": [],
+        "label": "post_cover"
+      }
+    },
+    "post_image_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "post_image_desc",
+        "placeholder": "Write the description of the cover image above."
+      }
+    },
+    "post_text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading4, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "post_text",
+        "placeholder": "text"
+      }
+    }
+  }
+}
